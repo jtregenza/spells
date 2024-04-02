@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+
+Hello 
+
+<ul>
+    {% for spell in site.data.spells %}
+      <li><a href="{{ spell.spell_name | datapage_url: 'spells' }}">
+        {{spell.spell_name}} - {{spell.level}}
+    </a>
+      </li>
+    {% endfor %}
+    </ul>
