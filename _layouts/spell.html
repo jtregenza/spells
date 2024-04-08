@@ -459,6 +459,9 @@
         </div>
       </div>
       <p class="spell-text">{{page.spellText}}</p>
+      {% if page.higher_level %}
+        <div class="text-block-32"><strong>Higher Level:</strong> {{page.higher_level}}</div>
+      {% endif %}
       {% if page.material_components %}
         <div class="text-block-32">Material Components: {{page.material_components}}</div>
       {% endif %}
