@@ -1295,8 +1295,8 @@
                 "stat_block": {
                     "name": "Raised Scarecrow",
                     "type": "Medium Construct, Chaotic Good",
-                    "class": "11",
-                    "hitpoints": "36 (8d8)",
+                    "class": "12",
+                    "hitpoints": "40 (10d8)",
                     "speed": "30ft",
                     "str-points": "11 (+0)",
                     "dex-points": "13 (+1)",
@@ -1304,8 +1304,8 @@
                     "wis-points": "10 (+0)",
                     "cha-points": "13 (+0)",
                     "skills": "<em>Damage Vulnerabilities</em> fire<br/><em>Damage Resistances</em> bludgeoning, piercing, and slashing from nonmagical attacks<br/><em>Damage Immunities</em> poison<br/><em>Condition Immunities</em> charmed, exhaustion, frightened, paralyzed, poisoned, unconscious",
-                    "senses": "darkvision 60 ft., passive Perception 10",
-                    "languages": "understands the languages of its creator but can't speak",
+                    "senses": "Darkvision 60 ft., Passive Perception 10",
+                    "languages": "Understands the languages of its creator but can't speak",
                     "challenge": "1 (200 XP)",
                     "traits" : {
                         "title": "False Appearance.",
@@ -1433,7 +1433,7 @@
                 "material_components": "A brass tuning fork",
                 "duration": "Concentration, up to 10 minutes",
                 "spellText": "You summon the sounds of a symphony. The sounds of a epic symphony swell to all within the radius of the spell, based the on song you choose for them to play the following will happen:",
-                "2table_rows": [
+                "twoTable_rows": [
                     {"left": "The Epic",
                     "right": "An illusory flight of creatures of your choice charge at the creatures within the radius. All creatures in that cone must make a WIS saving throw, on a failure they take 12d8 force damage. On a success, they take half damage. "},
                     {"left": "The Evocative",
@@ -1500,24 +1500,6 @@
             {
                 "id": "82",
                 "access": true,
-                "spell_name": "Betrayal from the Grave",
-                "level": "5th Level",
-                "category": "Knowledge",
-                "school": "Enchantment",
-                "classes": ["Paladin", "Warlock", "Sorcerer"],
-                "teaser": "Don't be too trusting",
-                "castingTime": "1 minute",
-                "concentration": false,
-                "ritual": false,
-                "range": "Touch",
-                "components": "V, S, M",
-                "material_components": "A flower grown in a graveyard",
-                "duration": "1d4 + 1 hours",
-                "spellText": "You touch a corpse that has been dead for no longer than 10 minutes. You extract from the corpse the mannerisms, cadence, personal information and recent memories of the person they once were. The DM may exclude information at their discretion. This information is enough to convincingly pass yourself off as the person, should you assume their visage. You retain this information for 1d4 + 1 hours."
-            },
-            {
-                "id": "83",
-                "access": true,
                 "spell_name": "Break Belief",
                 "level": "5th Level",
                 "category": "Control",
@@ -1531,7 +1513,7 @@
                 "components": "V, S",
                 "duration": "Instantaneous",
                 "spellText": "All creatures in a 30ft cone make a WIS save. On a success they take 4d8 psychic damage. On a failure their beliefs in their cause, self worth, relationship, community, or nation are shattered along with the psychic damage. They roll 1d6 on the table below to see what their reaction is. <br/><br/>This effect lasts for 7 days with a roll each morning to break the spell. If the target fails each day for the total length then they full turn from their old belief.",
-                "2table_rows": [
+                "twoTable_rows": [
                     {"left": "Roll",
                     "right": "Outcome"},
                     {"left": "1",
@@ -1549,7 +1531,7 @@
                 ]
             },
             {
-                "id": "84",
+                "id": "83",
                 "access": true,
                 "spell_name": "Point of View",
                 "level": "5th Level",
@@ -1566,7 +1548,7 @@
                 "spellText": "A creature that you touch makes a WIS saving throw against your spell save DC. On a failure, for the duration of the spell you can look through the targeted creature's eyes and see what they see. This only allows you to see what they see and does not include what they hear. You can make actions of your own body while this occurs. On a success, the target knows you tried to see eye to eye with them."
             },
             {
-                "id": "85",
+                "id": "84",
                 "access": true,
                 "spell_name": "Artillery Strike",
                 "level": "5th Level",
@@ -1584,7 +1566,7 @@
                 "spellText": "You point to a target location and summon a strike of powerful explosive to hit that location from the sky. On your next round of action any creature within a 120ft circle must make a DEX saving throw or take 8d12 force damage."
             },
             {
-                "id": "86",
+                "id": "85",
                 "access": true,
                 "spell_name": "Past Sight",
                 "level": "5th Level",
@@ -1602,7 +1584,7 @@
                 "spellText": "Select a 20ft cube at a location to see what happened there over the last day. Figures and changes appear as ghostly images. You can quickly speed up, pause and rewind time over the 24 hours recorded. Sound is not recorded and if there was magic cast you see what type it was. If the area was subject to a dispel magic or anti-magic field then those objects or location are shrouded. Creatures that cannot be scried upon or are immune to magic as also not recorded."
             },
             {
-                "id": "87",
+                "id": "86",
                 "access": true,
                 "spell_name": "Conjure Supplies",
                 "level": "5th Level",

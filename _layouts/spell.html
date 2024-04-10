@@ -459,9 +459,9 @@
         </div>
       </div>
       <p class="spell-text">{{page.spellText}}</p>
-      {% if page.2table %}
+      {% if page.twoTable_rows %}
         <table>
-          {% for row in page.2table.rows %}
+          {% for row in page.twoTable_rows %}
             <tr>
               <td>{{row.left}}</td>
               <td>{{row.right}}</td>
@@ -469,9 +469,9 @@
           {% endfor %} 
         </table>
       {% endif %}
-      {% if page.3table %}
+      <!-- {% if page.threeTable_rows %}
       <table>
-        {% for row in page.3table.rows %}
+        {% for row in page.threeTable_rows %}
           <tr>
             <td>{{row.left}}</td>
             <td>{{row.center}}</td>
@@ -479,14 +479,14 @@
           </tr>
         {% endfor %} 
       </table>
-    {% endif %}
+    {% endif %} -->
       {% if page.stat_block %}
       <div id="stat-block" class="stat-block wide">
         <hr class="orange-border">
         <div class="section-left">
             <div class="creature-heading">
-                <h1 id="monster-name">{page.stat_block.name}</h1>
-                <h2 id="monster-type">{page.stat_block.type}</h2>
+                <h1 id="monster-name">{{page.stat_block.name}}</h1>
+                <h2 id="monster-type">{{page.stat_block.type}}</h2>
             </div> <!-- creature heading -->
             <svg height="5" width="100%" class="tapered-rule">
                 <polyline points="0,0 400,2.5 0,5"></polyline>
@@ -494,15 +494,15 @@
             <div class="top-stats">
                 <div class="property-line first">
                     <h4>Armor Class</h4>
-                    <p id="armor-class">{page.stat_block.class}</p>
+                    <p id="armor-class">{{page.stat_block.class}}</p>
                 </div> <!-- property line -->
                 <div class="property-line">
                     <h4>Hit Points</h4>
-                    <p id="hit-points">{page.stat_block.hitpoints}</p>
+                    <p id="hit-points">{{page.stat_block.hitpoints}}</p>
                 </div> <!-- property line -->
                 <div class="property-line last">
                     <h4>Speed</h4>
-                    <p id="speed">{page.stat_block.speed}</p>
+                    <p id="speed">{{page.stat_block.speed}}</p>
                 </div> <!-- property line -->
                 <svg height="5" width="100%" class="tapered-rule">
                     <polyline points="0,0 400,2.5 0,5"></polyline>
@@ -510,36 +510,41 @@
                 <div class="scores">
                     <div class="scores-strength">
                         <h4>STR</h4>
-                        <p id="strpts">{page.stat_block.str-points}</p>
+                        <p id="strpts">{{page.stat_block.str-points}}</p>
                     </div> <!-- scores strength -->
                     <div class="scores-dexterity">
                         <h4>DEX</h4>
-                        <p id="dexpts">{page.stat_block.dex-points}</p>
+                        <p id="dexpts">{{page.stat_block.dex-points}}</p>
                     </div> <!-- scores dexterity -->
                     <div class="scores-constitution">
                         <h4>CON</h4>
-                        <p id="conpts">{page.stat_block.con-points}</p>
+                        <p id="conpts">{{page.stat_block.con-points}}</p>
                     </div> <!-- scores constitution -->
                     <div class="scores-intelligence">
                         <h4>INT</h4>
-                        <p id="intpts">{page.stat_block.int-points}</p>
+                        <p id="intpts">{{page.stat_block.int-points}}</p>
                     </div> <!-- scores intelligence -->
                     <div class="scores-wisdom">
                         <h4>WIS</h4>
-                        <p id="wispts">{page.stat_block.wis-points}</p>
+                        <p id="wispts">{{page.stat_block.wis-points}}</p>
                     </div> <!-- scores wisdom -->
                     <div class="scores-charisma">
                         <h4>CHA</h4>
-                        <p id="chapts">{page.stat_block.cha-points}</p>
+                        <p id="chapts">{{page.stat_block.cha-points}}</p>
                     </div> <!-- scores charisma -->
                 </div> <!-- scores -->
                 <svg height="5" width="100%" class="tapered-rule">
                     <polyline points="0,0 400,2.5 0,5"></polyline>
                 </svg>
-                <div id="properties-list"><div class="property-line first"><div><h4>Skills</h4> <p>{page.stat_block.skills}</p></div></div><!-- property line --><div class="property-line"><div><h4>Senses</h4> <p>{page.stat_block.senses}</p></div></div><!-- property line --><div class="property-line"><div><h4>Languages</h4> <p>{page.stat_block.languages}</p></div></div><!-- property line --></div>
+                <div id="properties-list"><div class="property-line first"><div><h4>Skills</h4> <p>{{page.stat_block.skills}}</p></div></div><!-- property line -->
+                <div class="property-line">
+                  <div>
+                  <h4>Senses</h4> <p>{{page.stat_block.senses}}</p></div></div><!-- property line -->
+                  <div class="property-line">
+                    <div><h4>Languages</h4> <p>{{page.stat_block.languages}}</p></div></div><!-- property line --></div>
                 <div id="challenge-rating-line" class="property-line last">
                     <h4>Challenge</h4>
-                    <p id="challenge-rating">{page.stat_block.challenge}</p>
+                    <p id="challenge-rating">{{page.stat_block.challenge}}</p>
                 </div> <!-- property line -->
             </div> <!-- top stats -->
             <svg height="5" width="100%" class="tapered-rule">
@@ -547,7 +552,7 @@
             </svg>
             <div class="actions">
                 <div id="traits-list-left">
-                  {% for trait in page.traits %}
+                  {% for trait in page.stat_block.traits %}
                   <div class="property-block">
                     <div>
                       <h4>{{trait.title}}</h4>
@@ -561,7 +566,7 @@
         <div class="section-right">
             <div class="actions">
                 <div id="traits-list-right"><h3>Actions</h3>
-                  {% for action in page.actions %}
+                  {% for action in page.stat_block.actions %}
                   <div class="property-block">
                     <div>
                       <h4>{{action.title}}</h4>
