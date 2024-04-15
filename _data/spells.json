@@ -52,7 +52,7 @@
                 "components": "V",
                 "material_components": false,
                 "duration": "Instantaneous",
-                "spellText": "You unleash a flurry of lies laced with harmful enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), make a ranged spell attack against the target. On a hit, the target takes 1d8 psychic damage. This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+                "spellText": "You unleash a flurry of lies laced with harmful enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), make a ranged spell attack against the target. On a hit, the target takes 1d8 psychic damage. This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
             },
             {
                 "id": "4",
@@ -104,7 +104,7 @@
                 "range": "Self",
                 "components": "V",
                 "duration": "Instantaneous",
-                "spellText": "You supercharge your unarmed weapons and make an attack against a creature within range. On a hit, the target suffers the weapon attack's normal effects plus an additional 1d8 magic damage.***At Higher Levels.*** At 5th level, the unarmed attack deals an extra 1d8 magic damage to the target on a hit (Total 2d8). Damage rolls increase by 1d8 at 11th level (3d8) and 17th level (4d8)."
+                "spellText": "You supercharge your unarmed weapons and make an attack against a creature within range. On a hit, the target suffers the weapon attack's normal effects plus an additional 1d8 magic damage.<strong><em>At Higher Levels.<strong><em> At 5th level, the unarmed attack deals an extra 1d8 magic damage to the target on a hit (Total 2d8). Damage rolls increase by 1d8 at 11th level (3d8) and 17th level (4d8)."
             },
             {
                 "id": "7",
@@ -2478,7 +2478,7 @@
                 "category": "Knowledge",
                 "school": "Necromancy",
                 "classes": ["Warlock", "Cleric"],
-                "teaser": "Anything you can do, you can now do",
+                "teaser": "Let your death be worth more than this",
                 "castingTime": "1 minute",
                 "concentration": true,
                 "ritual": false,
@@ -2487,6 +2487,78 @@
                 "material_components": "A cloth from a holy place worth 10,000g to a recognised religion",
                 "duration": "Concentration, up to 1 hour",
                 "spellText": "You bring the spirits of those fallen around you in a 200ft radius back as glowing angelic or undead representations of themselves. For 1 hour, an friendly creature that has died within the last day fight along side you and your allies. They are unable to be killed and deal 4d8 radiant or necrotic damage on attacks. While in this form their bodies can not be harmed. At the end of the spell they are considered to have only just died.<br/><br/> If they kill the creature that killed them or completed their objective then the spell material cost to bring them back is quartered rounding down.<br/><br/>You can instead choose to bring all the fallen back at 0hp but stable if they have a body that can sustain life at the cost of 5 levels of exhaustion to yourself and this spell can not be cast again for 1 year."
+            },
+            {
+                "id": "126",
+                "access": true,
+                "spell_name": "Make Real",
+                "level": "9th Level",
+                "category": "Manipulation",
+                "school": "Transmutation",
+                "classes": ["Wizard", "Sorcerer"],
+                "teaser": "What is reality, what is the dream?",
+                "castingTime": "1 minute",
+                "concentration": true,
+                "ritual": false,
+                "range": "30ft",
+                "components": "V, S, M",
+                "material_components": "A gem worth at least 1,000g",
+                "duration": "Instantaneous",
+                "spellText": "You target a conjured illusion of no more than 20ft in size and attempt to manifest it into reality. You make a DC 20 WIS saving throw. On a success the illusion becomes real. If the illusion was of a creature it gains sentience as a new being. If the Illusion was of the caster than the manifestation gains their memory, but knows it has become real from a spell. "
+            },
+            {
+                "id": "126",
+                "access": true,
+                "spell_name": "Magnificent Illusion",
+                "level": "9th Level",
+                "category": "Manipulation",
+                "school": "Transmutation",
+                "classes": ["Wizard", "Sorcerer"],
+                "teaser": "These aren't mere tricks",
+                "castingTime": "1 hour",
+                "concentration": true,
+                "ritual": false,
+                "range": "6 Miles",
+                "components": "V, S, M",
+                "material_components": "A diamond worth at least 6,000g, consumed",
+                "duration": "Concentration, up to 7 days",
+                "spellText": "You create an illusion of an object, location, weather event, super natural phenomena, natural event, group of creatures, or landscape up to 2 miles across. This illusion can be interacted with and feels real to those who are within its space. You can have the illusion follow commands and it can adapt to outside input. The illusion can damage creatures, but when they die they are instead hidden and placed into stasis until the illusion ends at which point they waken at the same health they entered the illusion at. While in stasis they do not age and can not be harmed by non-magical means. If you cast this spell every 7days for 1 year then the illusion manifests itself into becoming real on a successful DC25 CHA saving throw. If the manifestation becomes real, any deity or higher power that has sway over that location is alerted. You can choose for creatures in stasis to either die or return to life at full health in the manifestation where they last were. "
+            },
+            {
+                "id": "127",
+                "access": true,
+                "spell_name": "Cadre of Gluttony",
+                "level": "9th Level",
+                "category": "Manipulation",
+                "school": "Transmutation",
+                "classes": ["Wizard", "Sorcerer"],
+                "teaser": "We saved the cosmos and our reward is minimum wage?",
+                "castingTime": "1 hour",
+                "concentration": false,
+                "ritual": false,
+                "range": "240ft",
+                "components": "V, S, M",
+                "material_components": "Golden Statue of a Bearded Man worth 2,000g",
+                "duration": "Instantaneous",
+                "spellText": "You summon several astral food vendors to feed the masses. The spell cost increases for each vendor you choose to summon at a time by 100g. These vendors appear in a circle around you and come with tables, firepits, shade and drinking fountains. Eating at these vendors costs a small amount of coin and a specific item, act or memory for their services. The caster pays the coin cost, but the consumer of the vendor's food must pay the specific cost to them, each cost must be new/different to previous time. Each vendor can feed up to 100 people for 1 day. Casting this spell is considered light activity. The effects of eating at the vendor starts after your next long rest then until the next time you long rest. You can have up to three meals at once.<br/><br/><strong>Darian's Daring Dessert</strong><br/><br/><em>Cost: Something from a foe you slew.</em><br/><br/>Darian provides a wide range of interesting experimental desserts to try. These give you +10 to initiative rolls and you can't be surprised.<br/><br/><strong>Jor'raan's Justice Juices</strong><br/><br/><em>Cost: Object from a fallen or lost ally</em><br/><br/>Jor'raan is a merchant of protection, his juices aid you in protecting those around you. A cup gives you a ward of 3d8 to protect an ally from as much damage as a reaction. Once the ward has absorb the total damage it dissipates.<br/><br/><strong>Belvaine's Bountiful BelvaTea</strong><br/><br/><em>Cost: A story of adventure</em><br/><br/>Belvaine's BelvaTea is famous for its franchised secret formula. A cup gives you +15 movement speed.<br/><br/><strong>Caledius' Cheerful Charcoal</strong><br/><br/><em>Cost: A winning arm wrestle against Caledius</em><br/><br/>Caledius creates a wonderful charcoal box of meats. A box gives you 2d8 temp hit points and when you have any temp hit points you gain 1d6 to attack rolls.<br/><br/><strong>Skalen's Soulful Soup</strong><br/><br/><em>Cost: A memory from your youth</em><br/><br/>Skalen has an ever cooking pot of stew full of flavour. A bowl gives you 3d12 satisfaction dice. As a bonus action you can roll one to regain that much health plus your proficiency bonus.<br/><br/><strong>Sommersby's Satisfying Salads</strong><br/><br/><em>Cost: A gift from a friend</em><br/><br/>Sommersby has scoured the planes for the freshest ingredients for her salads. A plate gives you a lucky dice.<br/><br/><strong>Broben's Brooding Brewery</strong><br/><br/><em>Cost: A bottle of ale you got as a present</em><br/><br/>Broben has mastered the art of brewing and has a new drink on tap every 7 days. A mug gives you advantage on saving throws against being charmed.<br/><br/><strong>Percel's Perfect Pastries</strong><br/><br/><em>Cost: A regretful story</em><br/><br/>Percel has an eye for the finest pastries and has even won an award or two. A piece gives you truesight.<br/><br/><strong>Koat's Kalming Krustaceans</strong><br/><br/><em>Cost: A note from your child or parent</em><br/><br/>Koat has been a notorious fisherman for many years and has managed to get catch that no one else can. A plate gives you the spell colour spray as a an action that doesn't cost a spell slot. "
+            },
+            {
+                "id": "127",
+                "access": true,
+                "spell_name": "Monster They Fear",
+                "level": "9th Level",
+                "category": "Manipulation",
+                "school": "Transmutation",
+                "classes": ["Sorcerer"],
+                "teaser": "Prove them right",
+                "castingTime": "1 action",
+                "concentration": false,
+                "ritual": false,
+                "range": "240ft",
+                "components": "V, S, M",
+                "material_components": "A jade stone with 1,000gp that is consumed",
+                "duration": "Concentration, up to 10 minutes",
+                "spellText": "You become the very monster that they believe you to be. Your size becomes gargantuan. You Health increases by 3d100 + 50. Either your Strength or Dexterity plus your Constitution increase by 8 to a maximum of 32. You have a frightful presence and all within 1 mile must make a DC 16 WIS saving throw or be feared. Your movement speed doubles and AC increases by +5. Once this spell ends then you revert back to your normal size at the same health you cast the spell at."
             }
             
             
