@@ -428,7 +428,23 @@
     </div>
   </div>
   <section class="section-5">
-    <div class="spell-card"><img src="../../../images/aperture.svg" loading="lazy" alt="">
+    <div class="spell-card">
+      {% if page.category == "Damage Single" %}
+        <img src="../../../images/TBR-icons_16-dmg-s.svg" loading="lazy" alt="Damage Single Icon">
+      {% elsif page.category == "Damage AOE" %}
+        <img src="../../../images/TBR-icons_16-dmg-aoe.svg" loading="lazy" alt="Damage Area of Effect Icon">
+        {% elsif page.category == "Knowledge" %}
+        <img src="../../../images/TBR-icons_16-know.svg" loading="lazy" alt="Knowledge Icon">
+        {% elsif page.category == "Movement" %}
+        <img src="../../../images/TBR-icons_16-move.svg" loading="lazy" alt="Movement Icon">
+        {% elsif page.category == "Control" %}
+        <img src="../../../images/TBR-icons_16-control.svg" loading="lazy" alt="Control Icon">
+        {% elsif page.category == "Manipulation" %}
+        <img src="../../../images/TBR-icons_16-manip.svg" loading="lazy" alt="Manipulation Icon">
+        {% elsif page.category == "Healing" %}
+        <img src="../../../images/TBR-icons_16-manip.svg" loading="lazy" alt="Healing Icon">
+      {% endif%}
+
       <h1 class="heading-28">{{page.spell_name}}</h1>
       <h2 class="heading-29">“{{page.teaser}}”</h2>
       <div class="divider"></div>
